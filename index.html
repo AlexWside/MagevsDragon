@@ -49,13 +49,13 @@
         </div>
         <div class="panel buttons">
             <template v-if='running'>
-            <button class="btn attack" @click='attack(false)'>attack</button>
-            <button class="btn skill-attack" @click='attack(true)'>skill</button>
-            <button class="btn heal" @click='healAndHurt'>potion</button>
-            <button class="btn give-up" @click='running = false ' >run</button>
+            <button class="btn attack" @click='attack(false)'><img width="50" src="img/staff.png" alt="staff"><br> attack</button>
+            <button class="btn skill-attack" @click='attack(true)'><img width="50" src="img/fire.png" alt="fire"><br>skill</button>
+            <button class="btn heal" @click='healAndHurt'><img width="50" src="img/potion.png" alt="potion"><br>potion</button>
+            <button class="btn give-up" @click='running = false ' ><img width="50" src="img/run.png" alt="run"><br>run</button>
             </template>
             <template v-else>
-              <button class="btn new-game" @click='startGame' >retry</button>
+              <button class="btn new-game" @click='startGame' >New Game</button>
             </template>
 
         </div>
